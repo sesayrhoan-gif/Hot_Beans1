@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;   
+    margin: 0;                
+    padding: 0;               
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+/* HEADER + FOOTER STYLING */
+header, footer {
+    background-color: #ff7b00; 
+    color: black;                      
+    width: 100%;  
+                     
+}
+
+
+/* HEADER LAYOUT*/
+header {
+    display: flex;              
+    align-items: center;        
+    justify-content: space-evenly; 
+    padding: 20px;              
+}
+
+
+/*  LOGO IMAGE */
+.logo {
+    max-width: 200px;  
+    height: auto;      
+}
+
+
+/*NAVIGATION BAR */
+nav {
+    background-color: #e55715; 
+    text-align: left;    
+}
+
+
+
+nav ul {
+    list-style: none;
+}
+
+
+/* puts menu items in one line */
+nav ul li {
+    display: inline-block;
+}
+
+
+/* styles the clickable links */
+nav ul li a {
+    text-decoration: none;  
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;     
+    display: inline-block;
+    border-radius: 10px;    
+    transition: 0.3s;       
+}
+
+
+/* hover effect when mouse is over links */
+nav ul li a:hover {
+    background-color: rgb(182, 164, 199);
+}
+
+
+
+    /* Header */
+    header {
+        background-color: #ff7b00;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .logo {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    /* Navigation */
+    nav {
+        background-color: #e55715;
+    }
+    
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu li {
+        margin: 0;
+    }
+    
+    .menu a {
+        display: block;
+        padding: 15px 25px;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    
+   /* Main Cookie Policy Section */
+.cookie-policy {
+    max-width: 800px; /* Slightly narrower for even better readability */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* FORCE CONTENT TO STACK VERTICALLY */
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Aligns text to the left */
+    text-align: left;
+}
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        
+        .menu {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .menu a {
+            border-top: 1px solid #444;
+        }
+    
+        .cookie-policy {
+            margin: 20px;
+            padding: 20px;
+        }
+    
+        .cookie-policy h2 {
+            font-size: 26px;
+        }
+
+        /*form section */
+    }
+    .form-section {
+        width: 60%;
+        margin: auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .form-section h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .form-section p {
+        text-align: center;
+        margin-bottom: 30px;
+        color: gray;
+    }
+    
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .input-box label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    .input-box input,
+    .input-box select,
+    .input-box textarea {
+        padding: 1px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    
+    .input-box input:focus,
+    .input-box select:focus,
+    .input-box textarea:focus {
+        outline: none;
+        border-color: #ff6600;
+    }
+    
+    .button-group {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    .button1,
+    .button2 {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .button1 {
+        background-color: #ff6600;
+        color: white;
+    }
+    
+    .button1:hover {
+        background-color: #e65c00;
+    }
+    
+    .button2 {
+        background-color: #cccccc;
+    }
+    
+    .button2:hover {
+        background-color: #aaaaaa;
+    }
+
+   /* home page Section */
+   .home-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.home-page h3 {
+    color: #444;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.home-page p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* List */
+.home-page ul {
+    padding-left: 20px;
+}
+
+.home-page li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a {
+        border-top: 1px solid #444;
+    }
+
+    .home-page {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .home-page h2 {
+        font-size: 26px;
+    }
+}
+/*Footer*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #050505;
+    /* Sticky Footer Setup: Makes body a flex container filling the screen */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Tell your main content area to soak up all leftover space, pushing footer down */
+main, .main-content {
+    flex: 1; 
+}
+
+/* --- Content Styles --- */
+.content h1 span {
+    color: rgb(255, 175, 3);
+}
+
+/* --- Footer Styles --- */
+.footer {
+    background-color: #ff7b00;
+    color: white;
+    position: relative;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: auto; /* Extra insurance to keep it at the bottom */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-section ul {
+    padding: 0;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-section a:hover {
+    color: rgb(247, 243, 243);
+}
+
+.privacy {
+    text-align: right;
+}
+
+.footer-bottom {
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    /* Note: #000000e4 was almost pure black text on a #111 black background. 
+       Changed to a lighter gray so it is actually readable. */
+    color: #000000; 
+}
+
+
+/*Course image */
+.example {
+      width: 400px;
+      height: 300px;
+  }
+  
+  /* Resize images */
+  .example img {
+      width: 500%;
+      height: auto;
+  }
+  
+    /* Main Privacy Policy Section */  /* Main Terms & Conditions Section */
+.privacy-policy {
+    max-width: 800px; /* Slightly narrower for even better readability */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* FORCE CONTENT TO STACK VERTICALLY */
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Aligns text to the left */
+    text-align: left;
+}
+    
+    /* Responsive Design */
+    @media (max-width: 768px) 
+        {
+              .menu {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .menu a {
+            border-top: 1px solid #444;
+        }
+    
+        .privacy-policy {
+            margin: 20px;
+            padding: 20px;
+        }
+    
+        .privacy-policy h2 {
+            font-size: 26px;
+        }
+        }
+        /* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* TITLE */
+.section-title {
+    text-align: center;
+}
+
+/* GRID */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARDS */
+.course-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* BUTTON */
+.apply-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.apply-btn:hover {
+    background: darkorange;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* PROFILE CARD */
+.profile {
+    background: white;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+.profile h2 {
+    color: #ff3d00;
+    margin-top: 0;
+}
+
+.profile h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* LIST STYLING */
+.profile ul {
+    padding-left: 20px;
+}
+
+.profile ul li {
+    margin: 8px 0;
+    padding-left: 5px;
+}
+
+/* PARAGRAPHS */
+.profile p {
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+}
+
+   

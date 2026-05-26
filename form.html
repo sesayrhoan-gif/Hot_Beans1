@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Hot Beans - Application</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Hot Beans Company</h1>
+    <img src="cropped-hotbeans-removebg-preview.png" alt="Hot Beans Logo" class="logo">
+</header>
+
+<!-- Navigation -->
+<nav>
+    <ul class="menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="Eligibility.html">Eligibility</a></li>
+        <li><a href="form.html">Application</a></li>
+        <li><a href="Course.html">Course</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<section class="content-section">
+
+    <section class="form-section">
+
+        <h1>Job Application</h1>
+        <p>Start your career with Hot Beans Web today.</p>
+
+        <form class="form"
+              action="https://formsubmit.co/sesayrhoan@gmail.com"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <!-- First Name -->
+            <div class="input-box">
+                <label for="fname">First Name</label>
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="John"
+                    required
+                    maxlength="25">
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-box">
+                <label for="lname">Last Name</label>
+                <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Doe"
+                    required
+                    maxlength="25">
+            </div>
+
+            <!-- Email -->
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@email.com"
+                    required>
+            </div>
+
+            <!-- Birthday -->
+            <div class="input-box">
+                <label for="birthday">Date of Birth</label>
+                <input
+                    type="date"
+                    id="birthday"
+                    name="birthday"
+                    required>
+            </div>
+
+            <!-- Phone -->
+            <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+44 7847 199970"
+                    required>
+            </div>
+
+            <!-- Gender -->
+            <div class="input-box">
+                <h3>Gender</h3>
+
+                <label>
+                    <input type="radio" name="gender" value="Male" required>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+            </div>
+
+            <!-- Position -->
+            <div class="input-box">
+                <label for="position">Available Position</label>
+          <select id="position" name="position" required>
+          <option value="">Choose a Course</option>
+          <option value="fundamentals">Web Development Fundamentals</option>
+          <option value="advanced">Advanced Web Development</option>
+</select>
+            </div>
+
+            <!-- Experience -->
+            <div class="input-box">
+                <label for="experience">Why should we hire you?</label>
+
+                <textarea
+                    id="experience"
+                    name="experience"
+                    rows="6"
+                    placeholder="Tell us about your skills, experience, and passion for web development..."
+                    required></textarea>
+            </div>
+
+            <!-- Upload CV -->
+            <div class="input-box">
+                <label for="file">Upload Your CV</label>
+
+                <input
+                    type="file"
+                    id="file"
+                    name="file"
+                    accept=".doc,.docx,.pdf"
+                    required>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <input class="button1" type="submit" value="Submit Application">
+                <input class="button2" type="reset" value="Reset Form">
+            </div>
+
+        </form>
+
+    </section>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Hot Bean Web</h3>
+
+            <p>
+                Hot Bean Web is a modern web development company helping businesses
+                create professional websites and digital solutions.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+
+            <p>Email: info@hotbeanweb.com</p>
+            <p>Phone: +44 20 1234 5678</p>
+            <p>Address: 25 Web Street, London, UK</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Legal</h3>
+
+            <ul>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms.html">Terms & Conditions</a></li>
+                <li><a href="Cookie Policy.html">Cookie Policy</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Hot Bean Web. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<script src="Js/Form.js"></script>
+
+</body>
+</html>
